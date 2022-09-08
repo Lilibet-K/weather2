@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheWeather</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <body>
+      <h1>The Forecast</h1>
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Weather</a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="elem1"
+              type="search"
+              placeholder="Enter a city"
+              aria-label="Enter a city"
+            />
+            <input class="btn" id="butt" type="button" value="Search" />
+          </form>
+        </div>
+      </nav>
+
+      <h2 id="str">Kyiv</h2>
+      <div id="temperature" class="weather-temperature"></div>
+      <div class="container_div_img">
+        <img
+          src="https://thumbs.dreamstime.com/b/panoramic-view-pink-purple-sky-sunset-120847075.jpg"
+          class="img-fluid"
+          alt="nature"
+          width="1800"
+        />
+
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <span
+                >Today
+                <section>+22℃|℉</section></span
+              >
+            </div>
+            <div class="col-2">
+              <span>Tuesday</span>
+              <section>+21℃|℉</section>
+            </div>
+            <div class="col-2">
+              <span>Wednesday</span>
+              <section>+25℃|℉</section>
+            </div>
+            <div class="col-2">
+              <span>Thursday</span>
+              <section>+24℃|℉</section>
+            </div>
+            <div class="col-2">
+              <span>Friday</span>
+              <section>+25℃|℉</section>
+            </div>
+
+            <div class="col-2">
+              <span>Saturday</span>
+              <section>+28℃|℉</section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/main.js"></script>
+    </body>
+  </head>
+</html>
